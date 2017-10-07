@@ -133,7 +133,7 @@
       (let [pos (:pos tok)
             end (:end tok)]
         (if pos
-          (printf "%s %s%s%s %2d | %-9s | %-25s | P = %04.4f | %.20s\n"
+          (printf "%s %s%s%s %2d | %-12s | %-30s | P = %02.4f | %.20s\n"
                   (if (some #{(:index tok)} winners-indices) "W" " ")
                   (apply str (repeat pos \space))
                   (apply str (repeat (- end pos) \-))
@@ -141,7 +141,7 @@
                   i
                   (when-let [x (:dim tok)] (name x))
                   (when-let [x (-> tok :rule :name)] (name x))
-                  (float (learn/route-prob tok classifiers))
+                  (float (Math/pow Math/E (learn/route-prob tok classifiers)))
                   (string/join " + " (mapv #(get-in % [:rule :name]) (:route tok))))
           (printf "  %s\n" (:text tok)))))))
 
