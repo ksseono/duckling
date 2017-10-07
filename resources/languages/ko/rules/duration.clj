@@ -46,6 +46,11 @@
   {:dim :duration
    :value (duration :day 1)}
 
+  "two days - 이틀"
+  #"이틀"
+  {:dim :duration
+   :value (duration :day 2)}
+
   "<integer> <unit-of-duration>"
   [(integer 0) (dim :unit-of-duration)]; duration can't be negative...
   {:dim :duration
