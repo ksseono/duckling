@@ -70,8 +70,8 @@
   [(dim :time) (dim :ordinal) (dim :cycle)]
   (cycle-nth-after-not-immediate (:grain %3) (dec (:value %2)) %1)
 
-  "the day after tomorrow - 내일모래"
-  #"(내일)?모래"
+  "the day after tomorrow - 내일모레"
+  #"(내일)?모레"
   (cycle-nth-after :day 1 (cycle-nth :day 1))
 
   "the day before yesterday - 엊그제"
