@@ -2,7 +2,7 @@
   :description "The linguist that parses text into structured data, forked from wit-ai/duckling"
   :license {:url "https://github.com/ksseono/duckling"
             :comments "see LICENSE"}
-  :url "https://github.com/wit-ai/duckling"
+  :url "https://github.com/ksseono/duckling"
   :plugins [[lein-midje "3.2.1"]]
   :repl-options {:init-ns duckling.core}
   :dependencies [[org.clojure/clojure "1.8.0"]
@@ -20,7 +20,7 @@
   :scm {:name "git"
         :url "https://github.com/ksseono/duckling"}
   :pom-addition [:developers [:developer
-                             [:name "Wit.ai"]
+                             [:name "seonho kim"]
                              [:url "https://github.com/ksseono/duckling"]
                              [:email "ksseono@gmail.com"]
                              [:timezone "-7"]]])
