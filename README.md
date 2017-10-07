@@ -1,6 +1,7 @@
 # Duckling
 
 [![Clojars Project](https://img.shields.io/clojars/v/ksseono/duckling.svg)](https://clojars.org/ksseono/duckling)
+[![CircleCI](https://circleci.com/gh/ksseono/duckling/tree/master.svg?style=svg)](https://circleci.com/gh/ksseono/duckling/tree/master)
 
 Duckling is a Clojure library that parses text into structured data:
 
